@@ -11,5 +11,5 @@
 ?>
 
 <p>
-    <a href="ex_d.html">Voltar</a>
+    <a href="ex_d_form.php">Voltar</a>
 </p>
