@@ -12,23 +12,26 @@
     <h1>Média</h1>
 
     <form action="ex_d.php" method="get">
-        <label for="nota1" id="nota1">
+        <label for="nota1">
             Digite a nota 1
         </label>
+        <br>
         <input placeholder="Nota 1" type="text" id="nota1" name="nota1">
 
         <p>
-            <label for="nota2" id="nota2">
+            <label for="nota2">
                 Digite a nota 2
             </label>
+            <br>
             <input placeholder="Nota 2" type="text" id="nota2" name="nota2">
 
         </p>
 
         <p>
-            <label for="nota3" id="nota3">
+            <label for="nota3">
                 Digite a nota 3
             </label>
+            <br>
             <input placeholder="Nota 3" type="text" id="nota3" name="nota3">
 
         </p>
@@ -38,6 +41,13 @@
         </p>
 
     </form>
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </body>
 
 </html>

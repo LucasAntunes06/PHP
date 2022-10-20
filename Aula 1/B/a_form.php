@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html lang="PT-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E</title>
+    <title>Exercíco B</title>
 </head>
-
 <body>
-
-    <form action="ex_e.php" method="get">
-        <label for="idade" id="idade">
-            Digite a sua idade
-        </label>
-        <input placeholder="Idade" type="text" id="idade" name="idade">
-
+    <form action="resposta.php" method="get">
+        <label for="idade">Digite a sua idade: </label><br>
+        <input name="idade" id="idade" type="text">
         <p>
             <input type="submit" value="Enviar">
         </p>
-
     </form>
 </body>
-
 </html>

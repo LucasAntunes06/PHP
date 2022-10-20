@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F</title>
+    <title>E</title>
 </head>
 
 <body>
-<h1>Competição de Taekwondo</h1>
-<form action="ex_f.php" method="get" name="idade">
+
+    <form action="ex_e.php" method="get" name="idade">
         <label for="idade">
             Digite a sua idade
         </label>
