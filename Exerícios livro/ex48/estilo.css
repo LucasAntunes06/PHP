@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+}
+
+.m-auto{
+    margin:0 auto;
+}
+
+#btn:hover, #btn-2:hover{
+    transition: .2s all;
+}
+
+h1{
+    font-size:5rem !important;
+}
+
+/* #foto{
+    filter: invert(100%);
+} */

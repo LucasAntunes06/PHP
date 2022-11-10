@@ -41,15 +41,21 @@
 
     <div style="display: flex; flex-direction:row; justify-content:center; gap:5px;">
     <p>
-        <a href="compras_esvaziar.php">Esvaziar lista</a>
+        <button>
+            <a href="compras_esvaziar.php">Esvaziar lista</a>
+        </button>
     </p>
     
     <p>
-        <a href="apagar_ultimo.php">Apagar o último</a>
+        <button>
+            <a href="apagar_ultimo.php">Apagar o último</a>
+        </button>
     </p>
 
     <p>
-        <a href="apagar_primeiro.php">Apagar o primeiro</a>
+        <button>
+            <a href="apagar_primeiro.php">Apagar o primeiro</a>
+        </button>
     </p>
     </div>
 
@@ -83,12 +89,18 @@
             color: white;
             font-weight: bolder;
             text-decoration: none;
+            /* border: solid 2px white;
+            padding: 5px;
+            border-radius: 10px; */
+        }
+        button:hover{
+            scale: 1.1;
+        }
+        button{
             border: solid 2px white;
             padding: 5px;
             border-radius: 10px;
-        }
-        a:hover{
-            scale: 1.1;
+            background-color: rgba(0,0,0,0);
         }
     </style>
 </body>
