@@ -6,24 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo 'Página inicial'; ?></title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" type="image/x-icon">
 </head>
 
-<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 font-mono">
-
+<body class="antialiased text-slate-400 bg-slate-900 font-mono">
+    
     <div class="flex flex-col justify-center content-center h-screen">
-
+        
         <h1 class="text-center text-blue-500 font-sans font-semibold">
             LOGIN
         </h1>
+        <?php
+            if(isset($_GET['erro'])){
+                echo '<h2 class="text-red-500">Usuário ou senha inválidos</h2>';
+            }
+        ?>
         <div class="bg-sky-100 w-96 h-96 flex flex-col items-center justify-center m-auto rounded-lg shadow-xl">
             <div class="bg-slate-900 w-28 h-28 rounded-full shadow-xl mb-4">
                 <img id="foto" src="http://cdn.onlinewebfonts.com/svg/img_568656.png" class="height-16 invert">
             </div>
             <div class="flex flex-col items-center justify-center gap-y-8">
-                <form action="login_gravar.php" method="POST">
+                <form action="verifica.php" method="POST">
                     <input type="text" name="user" placeholder="Digite seu usuário" class="focus:outline-none focus:ring focus:ring-slate-300 rounded-lg shadow-lg border-slate-400 border-2 mb-4 h-9 text-center">
                     <br>
                     <input type="password" name="senha" placeholder="Digite sua senha" class="focus:outline-none focus:ring focus:ring-slate-300 rounded-lg shadow-lg border-slate-400 border-2 mb-4 h-9 text-center">
@@ -34,8 +38,10 @@
                 </form>
             </div>
         </div>
+        <a href="sair.php" class="bg-red-700 p-2 rounded-lg shadow-lg shadow-red-800/70 w-28 hover:shadow-red-400/70 text-white mx-auto">Sair</a>
     </div>
-
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>

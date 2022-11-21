@@ -1,9 +1,9 @@
-<?php
+ <?php
     //dados.php
     session_start();
     date_default_timezone_set("America/sao_paulo");
     file_put_contents('recados_gravados.php', 'Nome: '.$_POST['nome'].'<br>', FILE_APPEND);
-    file_put_contents('recados_gravados.php', 'Data: '.date('d/y').'<br>', FILE_APPEND);
+    file_put_contents('recados_gravados.php', 'Data: '.date('d/m/y').'<br>', FILE_APPEND);
     file_put_contents('recados_gravados.php', 'Hora: '.date('H:i').'<br>', FILE_APPEND);
     file_put_contents('recados_gravados.php', 'Mensagem: '.$_POST['msg'].'<br>', FILE_APPEND);
     file_put_contents('recados_gravados.php', '<br></br>', FILE_APPEND);

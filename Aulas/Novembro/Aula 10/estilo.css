@@ -45,7 +45,11 @@ a:hover{
 
 textarea{
     border-radius: 20px;
-    background: rgba(0,0,0,0);
+    background: #001627;
     border: solid white 2px;
     color: white;
+}
+
+label{
+    color: #001627;
 }

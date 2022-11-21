@@ -13,25 +13,25 @@
     <h1 class="text-center text-blue-500 font-sans font-semibold">Mensagens</h1>
     <div class="flex flex-row justify-evenly">
         <div>
-        <form action="dados.php" method="post"
+        <form action="dados.php" method="post" class="bg-slate-800 p-4 rounded-xl shadow-xl"
             <p>
-                <label for="nome">Digite seu nome: </label>
+                <label for="nome" class="text-gray-200">Digite seu nome: </label>
                 <br>
                 <input type="text" placeholder="Digite seu nome" name="nome" class="rounded-lg py-2 px-4 shadow-xl">
             </p>
     
-            <label for="msg">Digite a sua mensagem: </label>
+            <label for="msg" class="text-gray-200">Digite a sua mensagem: </label>
             <p>
-                <textarea name="msg" id="" cols="30" rows="10" class="rounded-lg py-2 px-4 shadow-xl"></textarea>
+                <textarea name="msg" id="" cols="30" rows="10" class="rounded-lg py-2 px-4 shadow-xl bg-slate-900"></textarea>
             </p>
             <br>
             <input type="submit" value="Enviar" class="active:bg-emerald-800 focus:outline-none focus:ring focus:ring-emerald-300 bg-emerald-500 hover:scale-105 text-emerald-100 px-2 py-1 font-sans font-bold rounded-xl">
-            <a href="remover_mensagem.php" class="active:bg-red-500 focus:outline-none focus:ring focus:ring-red-200 bg-red-600 hover:scale-105 text-emerald-100 px-2 py-1 font-sans font-bold rounded-xl">Apagar mensagens</a>
+            <a href="remover_mensagem.php" class="active:bg-red-500 focus:outline-none focus:ring focus:ring-red-200 bg-red-600 hover:px-2.5 hover:py-1.5 text-emerald-50 px-2 py-1 font-sans font-bold rounded-xl">Apagar mensagens</a>
         </div>
 
         </form>
         <?php
-        echo '<div class="flex flex-row items-center justify-center rounded-lg shadow-xl border-slate-50 border-2 w-72">';
+        echo '<div class="flex flex-row items-center justify-center bg-slate-800 p-4 rounded-xl shadow-xl text-gray-200 w-72">';
         echo '<h3>'.file_get_contents('recados_gravados.php').'</h3>';
         echo '</div>'
     ?>
