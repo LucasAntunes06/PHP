@@ -42,9 +42,6 @@
 
 <body class="bg-white dark:text-slate-800 text-center">
     <h1 class="text-4xl m-auto font-mono font-black text-indigo-500 
-    my-4 box-shadow-lg shadow-indigo ">
+    my-4 box-shadow-lg shadow-indigo">
         Empresa fictícia
     </h1>
-
-</body>
-
